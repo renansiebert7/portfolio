@@ -275,7 +275,7 @@ nav {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .sobre-mim p {
@@ -409,7 +409,7 @@ nav {
    HABILIDADES
 ================================ */
 .skills {
-    margin-top: 10%;
+    margin-top: 100px;
     text-align: center;
     padding: 80px 20px;
 }

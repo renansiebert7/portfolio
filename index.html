@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfólio Renan</title>
@@ -14,7 +15,7 @@
 
     <img class="topo" src="./assets/topo.png" alt="voltar-ao-topo">
 
-    <nav>
+    <nav data-aos="fade-left">
         <div class="nav-container">
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -36,7 +37,7 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down">
         <div class="hero-text">
             <span class="subtitle">OLÁ, ME CHAMO RENAN SIEBERT</span>
 
@@ -67,7 +68,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" data-aos="fade-up">
         <span class="subtitle">TECNOLOGIAS</span>
         <h2>Minhas Habilidades:</h2>
 
@@ -100,7 +101,7 @@
     </section>
 
 
-    <div class="sobre-mim">
+    <div class="sobre-mim" data-aos="fade-up">
         <img src="./assets/Design sem nome.png" alt="foto perfil" class="foto-perfil">
         <div class="section-sobre-mim">
             <h4>SOBRE</h4>
@@ -117,7 +118,7 @@
         </div>
     </div>
 
-    <div class="title-projects">
+    <div class="title-projects" data-aos="fade-up">
         <div class="title-text">
             <span>PROJETOS RECENTES</span>
             <h1>Meu Portfólio</h1>
@@ -129,14 +130,14 @@
     </div>
 
 
-    <section class="projetos">
+    <section class="projetos" data-aos="fade-up">
         <!-- PROJETO 1 -->
         <div class="projeto">
             <h2>Fenerbahtchê</h2>
-            <img src="./assets/FENERBAHTCHÊ.png" alt="Projeto Fenerbahtchê">
+            <img src="./assets/DESIGN READ.ME GIT HUB copy.png" alt="Projeto Fenerbahtchê">
 
             <p>
-                Site responsivo criado para centralizar informações de um clube esportivo
+                Site responsivo criado para centralizar informações e venda da camisa de torcida de um clube esportivo
                 de forma clara e organizada.
             </p>
 
@@ -146,13 +147,13 @@
             <br>
             <p class="tech">HTML • CSS • JavaScript</p>
             <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/fenerbahtche/" target="_blank">
+            <a class="btn-acesso" href="https://fenerbahtche.com.br" target="_blank">
                 Acessar Projeto
             </a>
         </div>
 
         <!-- PROJETO 2 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Landing Page — iOne X</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB LANDING PAGE.png" alt="Landing Page iOne X">
 
@@ -172,7 +173,7 @@
         </div>
 
         <!-- PROJETO 3 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>To Do List Futurista</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB TO DO LIST.png" alt="To Do List">
 
@@ -192,7 +193,7 @@
         </div>
 
         <!-- PROJETO 4 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Convert Money</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB.png" alt="Conversor de Moedas">
 
@@ -212,7 +213,7 @@
         </div>
 
         <!-- PROJETO 5 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Jokenpô</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB...png" alt="Jogo Jokenpô">
 
@@ -232,7 +233,7 @@
         </div>
 
         <!-- PROJETO 6 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Cronômetro</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB cronometro.png" alt="Cronômetro">
 
@@ -252,7 +253,7 @@
         </div>
 
         <!-- PROJETO 7 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Mini Calculadora</h2>
             <img src="./assets/DESIGN READ.ME GIT HUB (2).png" alt="Calculadora">
 
@@ -272,7 +273,7 @@
         </div>
 
         <!-- PROJETO 8 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Sorteador</h2>
             <img src="./assets/SORTEIO.png" alt="Projeto Sorteio">
 
@@ -292,7 +293,7 @@
         </div>
 
         <!-- PROJETO 9 -->
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-up">
             <h2>Super Mario Bros</h2>
             <img src="./assets/MARIO BROSS.png" alt="Projeto Super Mario">
 
@@ -312,55 +313,62 @@
         </div>
     </section>
 
-    <h1 class="titulo3">Meus Certificados:</h1>
+    <h1 class="titulo3" data-aos="fade-up">Meus Certificados:</h1>
     <div class="certificados">
         <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - HTML, CSS, Git e GitHub.png"
-            alt="Certificado html-css-git">
+            alt="Certificado html-css-git" data-aos="fade-up">
         <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - CSS - Display GRID.png"
-            alt="Certificado css-avançado">
+            alt="Certificado css-avançado" data-aos="fade-up">
         <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - JavaScript pt. V - A Nova Ordem de Dados.png"
-            alt="Certificado java-script">
+            alt="Certificado java-script" data-aos="fade-up">
         <img src="./assets/Certificado - JavaScript pt. VI - A Ascensão do Async_Await.png"
-            alt="Certificado JavaScript Avançado">
-        <img src="./assets/Certificado - Node.png" alt="Certificado Node">
+            alt="Certificado JavaScript Avançado" data-aos="fade-up">
+        <img src="./assets/Certificado - Node.png" alt="Certificado Node" data-aos="fade-up">
     </div>
 
-    <footer class="footer-container">
-        <h3 class="footer-title">Entre em Contato:</h3>
+    <footer class="footer-container" data-aos="fade-down">
+    <h3 class="footer-title">Entre em Contato:</h3>
 
-        <div class="contact-links">
-            <div class="contact-item">
-                <a href="https://www.linkedin.com/in/renansiebert" target="_blank" rel="noopener">
-                    <img src="./assets/linkedin.webp" alt="Ícone do LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <a href="https://github.com/renansiebert7" target="_blank" rel="noopener">
-                    <img src="./assets/github.png" alt="Ícone do GitHub">
-                    <span>GitHub</span>
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <a href="https://www.instagram.com/renan_siebert7/" target="_blank" rel="noopener">
-                    <img src="./assets/Instagram.svg" alt="Ícone do Instagram">
-                    <span>Instagram</span>
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <a href="https://wa.me/5551999550636" target="_blank" rel="noopener">
-                    <img src="./assets/whatsapp.png" alt="Ícone do WhatsApp">
-                    <span>WhatsApp</span>
-                </a>
-            </div>
+    <div class="contact-links">
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/renansiebert" target="_blank" rel="noopener">
+                <img src="./assets/linkedin.webp" alt="Ícone do LinkedIn">
+                <span>LinkedIn</span>
+            </a>
         </div>
-        <p> &copy; 2026 Renan Siebert | Todos os direitos reservados</p>
+
+        <div class="contact-item">
+            <a href="https://github.com/renansiebert7" target="_blank" rel="noopener">
+                <img src="./assets/github.png" alt="Ícone do GitHub">
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <a href="https://www.instagram.com/renan_siebert7/" target="_blank" rel="noopener">
+                <img src="./assets/Instagram.svg" alt="Ícone do Instagram">
+                <span>Instagram</span>
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <a href="https://wa.me/5551999550636" target="_blank" rel="noopener">
+                <img src="./assets/whatsapp.png" alt="Ícone do WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+    <p> &copy; 2026 Renan Siebert | Todos os direitos reservados</p>
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

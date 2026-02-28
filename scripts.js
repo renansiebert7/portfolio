@@ -56,10 +56,10 @@ document.querySelectorAll(".nav-menu button").forEach(link => {
 });
 
 window.addEventListener("click", (e) => {
-    if (navMenu.classList.contains("active") && 
-        !navMenu.contains(e.target) && 
+    if (navMenu.classList.contains("active") &&
+        !navMenu.contains(e.target) &&
         !hamburger.contains(e.target)) {
-        
+
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }
