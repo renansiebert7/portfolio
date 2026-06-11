@@ -20,6 +20,7 @@ Abaixo, as principais ferramentas que domino e utilizo nos meus projetos:
 
 | Projeto | Descrição | Status |
 | :--- | :--- | :---: |
+| 🍔 **DevBurguer** | Aplicação Full Stack de E-commerce para Delivery | ✅ Finalizado |
 | ⚽ **Fenerbahtchê** | Site oficial de time de futsal com listagem de equipe. | ✅ Finalizado |
 | 📱 **Landing Page iOne X** | Página de vendas de smartphone com foco em conversão. | ✅ Finalizado |
 | ✅ **To Do List Futurista** | Gerenciador de tarefas com manipulação de DOM. | ✅ Finalizado |
