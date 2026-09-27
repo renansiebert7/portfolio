@@ -4,19 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo-mark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio Renan</title>
+    <title>Renan Siebert — Desenvolvedor Full-Stack</title>
 </head>
 
 <body>
-    <div class="mascara"></div>
 
-    <img class="topo" src="./assets/topo.png" alt="voltar-ao-topo">
+    <button class="topo" id="btnTopo" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
 
     <nav class="nav-bar">
         <div class="nav-container">
+            <img src="./assets//logo-mark.png" alt="Logo de Renan Siebert" class="brand" data-scroll="#inicio">
+
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,334 +32,368 @@
 
             <div class="nav-menu" id="nav-menu-mobile">
                 <div class="links">
-                    <a href="#inicio" class="button-inicio">Início</a>
-                    <a href="#habilidades" class="button-habilidades">Habilidades</a>
-                    <a href="#sobre" class="button-sobre-mim">Sobre Mim</a>
-                    <a href="#projetos" class="button-projetos">Projetos</a>
-                    <a href="#certificados" class="button-certificados">Certificados</a>
-                    <a href="#" id="btnCurriculo">Baixar Currículo</a>
-                    <button class="contact">Contate-me</button>
+                    <a href="#inicio" data-scroll="#inicio">Início</a>
+                    <a href="#sobre" data-scroll="#sobre">Sobre</a>
+                    <a href="#formacao" data-scroll="#formacao">Formação</a>
+                    <a href="#habilidades" data-scroll="#habilidades">Habilidades</a>
+                    <a href="#projetos" data-scroll="#projetos">Projetos</a>
+                    <a href="#certificados" data-scroll="#certificados">Certificados</a>
+                    <a href="#" id="btnCurriculo">Baixar currículo</a>
+                    <button class="contact" data-scroll="#contato">Contato</button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero" data-aos="fade-down">
-        <div class="hero-text">
-            <span class="subtitle">OLÁ, ME CHAMO RENAN SIEBERT</span>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <span class="tag">Full-Stack em formação</span>
 
-            <h1>
-                Desenvolvedor <br>
-                <span class="gradient">Front-End</span><br>
-                em <span class="gradient">formação</span>. Focado na criação de <span
-                    class="gradient">interfaces</span><br>
-                <span class="gradient">modernas,</span> responsivas e com ótima <span
-                    class="gradient">experiência</span><br>do
-                <span class="gradient">usuário</span>.
-            </h1>
+                <h1>
+                    Construindo <span class="accent">interfaces</span> pensadas para pessoas.
+                </h1>
 
-            <p>
-                Aluno do DevClub, onde aprimoro
-                habilidades em Front-End, boas práticas de código e desenvolvimento de
-                interfaces modernas, performáticas e acessíveis.
-            </p>
-            <br>
-            <div class="buttons">
-                <button class="projeto">Ver Projetos</button>
-                <button class="git" onclick="window.open('https://github.com/renansiebert7', '_blank')">GitHub</button>
-            </div>
-        </div>
+                <p>
+                    Ex-aluno do DevClub, onde me formei em Full-Stack, aprofundando HTML, CSS, JavaScript,
+                    React e Node.js — com foco em código organizado, responsividade e boa experiência de uso.
+                </p>
 
-        <div class="hero-image">
-            <img src="./assets/Design sem nome.png" alt="Foto perfil">
-        </div>
-    </section>
-
-    <section class="skills" data-aos="fade-up">
-        <span class="subtitle">TECNOLOGIAS</span>
-        <h2>Minhas Habilidades:</h2>
-
-        <div class="stack-icons">
-            <div class="tecnologias">
-                <i class="devicon-react-plain colored"></i>
-                <span>React</span>
+                <div class="buttons">
+                    <button class="projeto" data-scroll="#projetos">Ver projetos</button>
+                    <button class="git"
+                        onclick="window.open('https://github.com/renansiebert7', '_blank')">GitHub</button>
+                </div>
             </div>
 
-            <div class="tecnologias">
-                <i class="devicon-javascript-plain colored"></i>
-                <span>JavaScript</span>
+            <div class="hero-image">
+                <img src="./assets/Design sem nome.png" alt="Foto de perfil de Renan Siebert">
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="about-media">
+                <img src="./assets/Design sem nome.png" alt="Foto de Renan Siebert" class="foto-perfil">
             </div>
 
-            <div class="tecnologias">
-                <i class="devicon-html5-plain colored"></i>
-                <span>HTML5</span>
+            <div class="about-body">
+                <span class="tag">Sobre</span>
+                <h2>Quem é Renan Carlo?</h2>
+
+                <p>
+                    Sou desenvolvedor Full-Stack em formação, com foco na criação de interfaces modernas,
+                    responsivas e performáticas, além de APIs e integrações no back-end. Trabalho com HTML,
+                    CSS, JavaScript, React, Node.js, PostgreSQL e Sequelize, aplicando boas práticas de
+                    desenvolvimento, organização de código e manipulação do DOM.
+                </p>
+                <p>
+                    Desenvolvo landing pages, aplicações interativas e projetos autorais, sempre buscando
+                    unir design, funcionalidade e experiência do usuário. Tenho atenção a detalhes de
+                    UI/UX, estruturação de layouts e reutilização de componentes, garantindo soluções
+                    eficientes e escaláveis.
+                </p>
+                <p>
+                    Sou ex-aluno do DevClub, onde concluí minha formação em Full-Stack, e atualmente curso
+                    Engenharia de Software, aprofundando lógica de programação e algoritmos. Já apliquei
+                    esse conhecimento em projetos freelance, e minha experiência como Técnico de TI
+                    fortalece minha visão técnica e capacidade de resolver problemas na prática. Estou em
+                    constante evolução e busco uma oportunidade como Desenvolvedor Full-Stack Júnior, onde
+                    eu possa contribuir com código de qualidade e crescer profissionalmente.
+                </p>
+
+                <ul class="facts">
+                    <li><strong>Formação</strong>DevClub — Full-Stack (concluído)</li>
+                    <li><strong>Graduação atual</strong>Engenharia de Software</li>
+                    <li><strong>Experiência</strong>Freelance &amp; Técnico de TI</li>
+                    <li><strong>Objetivo</strong>Primeira vaga como Dev Full-Stack Jr.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="timeline" id="formacao">
+            <span class="tag">Trajetória</span>
+            <h2>Formação e experiência</h2>
+
+            <ol class="timeline-list">
+                <li>
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <h3>Técnico de TI</h3>
+                        <p>
+                            Experiência que desenvolveu minha visão técnica e capacidade de resolver
+                            problemas na prática — base que hoje aplico na lógica de programação.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <h3>DevClub — Formação em Full-Stack <span class="status">Concluída</span></h3>
+                        <p>
+                            Formação estruturada em HTML, CSS, JavaScript, Git/GitHub, React, Node.js,
+                            Sequelize e PostgreSQL, com prática constante em projetos autorais e boas
+                            práticas de desenvolvimento.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <h3>Freelance</h3>
+                        <p>
+                            Experiência prática em projetos de desenvolvimento web, aplicando HTML, CSS,
+                            JavaScript, React e Node.js para criar soluções personalizadas e atender às
+                            necessidades dos clientes.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <h3>Faculdade — Engenharia de Software <span class="status">Em andamento</span></h3>
+                        <p>
+                            Aprofundando lógica de programação, algoritmos e desenvolvimento de software,
+                            complementando minha formação técnica.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="skills" id="habilidades">
+            <span class="tag">Tecnologias</span>
+            <h2>O que eu uso no dia a dia</h2>
+
+            <div class="stack-icons">
+                <div class="tecnologias">
+                    <i class="devicon-react-plain colored"></i>
+                    <span>React</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-sequelize-plain colored"></i>
+                    <span>Sequelize</span>
+                </div>
+                <div class="tecnologias">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="projetos">
+            <div class="work-header">
+                <div>
+                    <span class="tag">Projetos recentes</span>
+                    <h2>Meu portfólio</h2>
+                </div>
+                <button class="projects-github" onclick="window.open('https://github.com/renansiebert7', '_blank')">
+                    Ver todo o GitHub
+                </button>
             </div>
 
-            <div class="tecnologias">
-                <i class="devicon-css3-plain colored"></i>
-                <span>CSS3</span>
+            <article class="featured-project">
+                <img src="./assets/DESIGN READ.ME GIT HUB DEV BURGUER.png" alt="Projeto DevBurguer">
+                <div class="featured-body">
+                    <span class="badge">Full stack</span>
+                    <h3>DevBurguer</h3>
+                    <p>
+                        Aplicação full stack desenvolvida para gerenciamento e venda de produtos de uma
+                        hamburgueria, oferecendo uma experiência moderna e intuitiva para clientes e
+                        administradores.
+                    </p>
+                    <p class="tech">React • Node.js • Express • PostgreSQL • Sequelize • Stripe • Styled Components</p>
+                    <a class="btn-acesso" href="https://devburguer-interface-nine.vercel.app/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+            </article>
+
+            <div class="projetos">
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB - PRODIGY.png" alt="Projeto Prodigy">
+                    <h3>Projeto Freelance - Prodigy Centro Educacional</h3>
+                    <p>
+                        Desenvolvido para centralizar e otimizar a venda de cursos de um centro educacional. A
+                        plataforma conta com estrutura totalmente semântica, design responsivo adaptado a qualquer
+                        dispositivo e foco total na experiência do usuário (UX), garantindo uma navegação fluida, clara
+                        e orientada à conversão.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://prodigyschool.com.br" target="_blank" rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB copy.png" alt="Projeto Fenerbahtchê">
+                    <h3>Projeto Freelance - Fenerbahtchê</h3>
+                    <p>
+                        Site responsivo criado para centralizar informações e venda da camisa de torcida de
+                        um clube esportivo de forma clara e organizada. Trabalhei estrutura semântica,
+                        responsividade e foco em experiência do usuário.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://fenerbahtche.com.br" target="_blank" rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB LANDING PAGE.png" alt="Landing Page iOne X">
+                    <h3>Landing Page — iOne X</h3>
+                    <p>
+                        Landing page fictícia com foco em interatividade e apresentação de produto.
+                        Implementei manipulação de DOM para troca dinâmica de cores e imagens.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/landing-page/index.html" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB TO DO LIST.png" alt="To Do List">
+                    <h3>To Do List Futurista</h3>
+                    <p>
+                        Aplicação de tarefas com foco em organização, usabilidade e visual moderno.
+                        Trabalhei controle de estado, persistência com localStorage e lógica em JavaScript.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/mini-ToDoList/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB.png" alt="Conversor de Moedas">
+                    <h3>Convert Money</h3>
+                    <p>
+                        Conversor de moedas com atualização dinâmica de valores. Pratiquei lógica, eventos
+                        e manipulação do DOM.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/PROJETO-CONVERT-MONEY/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB...png" alt="Jogo Jokenpô">
+                    <h3>Jokenpô</h3>
+                    <p>
+                        Jogo interativo de Pedra, Papel e Tesoura contra o computador. Desenvolvi lógica de
+                        jogo, placar dinâmico e interações em tempo real.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/JOKENPO/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/DESIGN READ.ME GIT HUB cronometro.png" alt="Cronômetro">
+                    <h3>Cronômetro</h3>
+                    <p>
+                        Cronômetro funcional com controle de tempo. Trabalhei lógica com setInterval,
+                        eventos e estados.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/cronometro/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/SORTEIO.png" alt="Projeto Sorteio">
+                    <h3>Sorteador</h3>
+                    <p>
+                        Sorteador de números com intervalo definido pelo usuário. Pratiquei validação de
+                        inputs e lógica em JavaScript.
+                    </p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                    <a class="btn-acesso" href="https://renansiebert7.github.io/dev-sorteio/" target="_blank"
+                        rel="noopener">
+                        Acessar projeto
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="tecnologias">
-                <i class="devicon-git-plain colored"></i>
-                <span>Git</span>
+        <section class="certificados" id="certificados">
+            <span class="tag">Estudos</span>
+            <h2>Certificados</h2>
+
+            <div class="certificados-container">
+                <figure>
+                    <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - DevClub.jpg"
+                        alt="Certificado de conclusão do DevClub">
+                    <figcaption>Conclusão do curso — DevClub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - HTML, CSS, Git e GitHub.png"
+                        alt="Certificado HTML, CSS, Git e GitHub">
+                    <figcaption>HTML, CSS, Git e GitHub — DevClub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - CSS - Display GRID.png"
+                        alt="Certificado CSS Display Grid">
+                    <figcaption>CSS — Display Grid — DevClub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - JavaScript pt. V - A Nova Ordem de Dados.png"
+                        alt="Certificado JavaScript pt. V">
+                    <figcaption>JavaScript pt. V — A Nova Ordem de Dados — DevClub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Certificado - JavaScript pt. VI - A Ascensão do Async_Await.png"
+                        alt="Certificado JavaScript pt. VI">
+                    <figcaption>JavaScript pt. VI — Async/Await — DevClub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Certificado - Node.png" alt="Certificado Node">
+                    <figcaption>Node — DevClub</figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-    <div class="sobre-mim" data-aos="fade-up">
-        <img src="./assets/Design sem nome.png" alt="foto perfil" class="foto-perfil">
-        <div class="section-sobre-mim">
-            <h4>SOBRE</h4>
-            <h2 class="titulo4">Quem é Renan Carlo?</h1>
-                <p> Sou desenvolvedor Front-End em formação, com foco na criação de interfaces modernas, responsivas e
-                    performáticas. Trabalho com HTML, CSS, JavaScript e React, aplicando boas práticas de
-                    desenvolvimento, organização de código, responsividade e manipulação do DOM.
-                    Desenvolvo landing pages, aplicações interativas e projetos autorais, sempre buscando unir design,
-                    funcionalidade e experiência do usuário. Tenho atenção a detalhes de UI/UX, estruturação de layouts
-                    e reutilização de componentes, garantindo soluções eficientes e escaláveis.
-                    Minha experiência como Técnico de TI fortalece minha visão técnica e minha capacidade de resolver
-                    problemas de forma prática. Estou em constante evolução e busco uma oportunidade como Desenvolvedor
-                    Front-End Júnior, onde eu possa contribuir com código de qualidade e crescer profissionalmente.</p>
-        </div>
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" alt="Imagem ampliada">
     </div>
 
-    <div class="title-projects" data-aos="fade-up">
-        <div class="title-text">
-            <span>PROJETOS RECENTES</span>
-            <h1>Meu Portfólio</h1>
-        </div>
-
-        <button class="projects-github" onclick="window.open('https://github.com/renansiebert7', '_blank')">
-            Ver Todo o GitHub
-        </button>
-    </div>
-
-
-    <section class="projetos">
-        <!-- PROJETO 1 -->
-
-        <div class="projeto" data-aos="fade-up">
-            <h2>DevBurguer</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB DEV BURGUER.png" alt="Projeto DevBurguer">
-
-            <p>
-                Aplicação full stack desenvolvida para gerenciamento e venda de produtos de uma hamburgueria, oferecendo
-                uma experiência moderna e intuitiva para clientes e administradores.
-            </p>
-            <br>
-
-            <p class="tech">
-                React • Node.js • Express • PostgreSQL • Sequelize • Stripe • Styled Components
-            </p>
-
-            <br>
-
-            <a class="btn-acesso" href="https://devburguer-interface-nine.vercel.app/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-
-        <div class="projeto" data-aos="fade-up">
-            <h2>Fenerbahtchê</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB copy.png" alt="Projeto Fenerbahtchê">
-
-            <p>
-                Site responsivo criado para centralizar informações e venda da camisa de torcida de um clube esportivo
-                de forma clara e organizada.
-            </p>
-
-            <p>
-                Trabalhei estrutura semântica, responsividade e foco em experiência do usuário.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://fenerbahtche.com.br" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 2 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Landing Page — iOne X</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB LANDING PAGE.png" alt="Landing Page iOne X">
-
-            <p>
-                Landing page fictícia com foco em interatividade e apresentação de produto.
-            </p>
-
-            <p>
-                Implementei manipulação de DOM para troca dinâmica de cores e imagens.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/landing-page/index.html" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 3 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>To Do List Futurista</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB TO DO LIST.png" alt="To Do List">
-
-            <p>
-                Aplicação de tarefas com foco em organização, usabilidade e visual moderno.
-            </p>
-
-            <p>
-                Trabalhei controle de estado, persistência com localStorage e lógica em JavaScript.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/mini-ToDoList/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 4 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Convert Money</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB.png" alt="Conversor de Moedas">
-
-            <p>
-                Conversor de moedas com atualização dinâmica de valores.
-            </p>
-
-            <p>
-                Pratiquei lógica, eventos e manipulação do DOM.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/PROJETO-CONVERT-MONEY/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 5 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Jokenpô</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB...png" alt="Jogo Jokenpô">
-
-            <p>
-                Jogo interativo de Pedra, Papel e Tesoura contra o computador.
-            </p>
-
-            <p>
-                Desenvolvi lógica de jogo, placar dinâmico e interações em tempo real.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/JOKENPO/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 6 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Cronômetro</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB cronometro.png" alt="Cronômetro">
-
-            <p>
-                Cronômetro funcional com controle de tempo.
-            </p>
-
-            <p>
-                Trabalhei lógica com setInterval, eventos e estados.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/cronometro/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 7 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Mini Calculadora</h2>
-            <img src="./assets/DESIGN READ.ME GIT HUB (2).png" alt="Calculadora">
-
-            <p>
-                Calculadora com operações matemáticas básicas.
-            </p>
-
-            <p>
-                Desenvolvi lógica, organização de código e manipulação do DOM.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/mini-calculadora/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 8 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Sorteador</h2>
-            <img src="./assets/SORTEIO.png" alt="Projeto Sorteio">
-
-            <p>
-                Sorteador de números com intervalo definido pelo usuário.
-            </p>
-
-            <p>
-                Pratiquei validação de inputs e lógica em JavaScript.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/dev-sorteio/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-
-        <!-- PROJETO 9 -->
-        <div class="projeto" data-aos="fade-up">
-            <h2>Super Mario Bros</h2>
-            <img src="./assets/MARIO BROSS.png" alt="Projeto Super Mario">
-
-            <p>
-                Landing page temática com foco em interatividade.
-            </p>
-
-            <p>
-                Trabalhei formulários, DOM, responsividade e experiência do usuário.
-            </p>
-            <br>
-            <p class="tech">HTML • CSS • JavaScript</p>
-            <br>
-            <a class="btn-acesso" href="https://renansiebert7.github.io/supermario-project/" target="_blank">
-                Acessar Projeto
-            </a>
-        </div>
-    </section>
-
-    <div class="certificados">
-        <h1 class="titulo3" data-aos="fade-up">Meus Certificados:</h1>
-        <div class="certificados-container">
-            <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - HTML, CSS, Git e GitHub.png"
-                alt="Certificado html-css-git" data-aos="fade-up">
-            <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - CSS - Display GRID.png"
-                alt="Certificado css-avançado" data-aos="fade-up">
-            <img src="./assets/Certificado - Dev Club - RENAN CARLO SIEBERT - JavaScript pt. V - A Nova Ordem de Dados.png"
-                alt="Certificado java-script" data-aos="fade-up">
-            <img src="./assets/Certificado - JavaScript pt. VI - A Ascensão do Async_Await.png"
-                alt="Certificado JavaScript Avançado" data-aos="fade-up">
-            <img src="./assets/Certificado - Node.png" alt="Certificado Node" data-aos="fade-up">
-        </div>
-    </div>
-
-    <footer class="footer-container" data-aos="fade-down">
-        <h3 class="footer-title">Entre em Contato:</h3>
+    <footer id="contato">
+        <h2>Vamos conversar?</h2>
+        <p class="footer-lead">
+            Estou em busca da minha primeira oportunidade como Desenvolvedor Full-Stack Júnior.
+            Me chama em qualquer um dos canais abaixo.
+        </p>
 
         <div class="contact-links">
             <div class="contact-item">
@@ -370,7 +411,7 @@
             </div>
 
             <div class="contact-item">
-                <a href="https://www.instagram.com/renan_siebert7/" target="_blank" rel="noopener">
+                <a href="https://www.instagram.com/renan.siebert_dev/" target="_blank" rel="noopener">
                     <img src="./assets/Instagram.svg" alt="Ícone do Instagram">
                     <span>Instagram</span>
                 </a>
@@ -383,17 +424,11 @@
                 </a>
             </div>
         </div>
-        <p> &copy; 2026 Renan Siebert | Todos os direitos reservados</p>
+
+        <p class="copyright">&copy; 2026 Renan Siebert — Todos os direitos reservados</p>
     </footer>
 
     <script src="scripts.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
 </body>
 
 </html>
