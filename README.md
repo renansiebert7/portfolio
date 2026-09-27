@@ -52,7 +52,7 @@ Este projeto consiste na criação e constante modernização do meu portfólio 
 ## 🖼️ Preview do Projeto
 
 <div align="center">
-  <img src="https://github.com/renansiebert7/meu-portf-lio/blob/master/assets/DESIGN%20READ.ME%20GIT%20HUB%20portf%C3%B3lio.png?raw=true" alt="Preview Portfólio Renan Siebert" width="100%">
+  <img src="https://github.com/renansiebert7/portfolio/blob/master/assets/DESIGN%20READ.ME%20GIT%20HUB%20-%20PORTF%C3%93LIO.png?raw=true" alt="Preview Portfólio Renan Siebert" width="100%">
 </div>
 
 ---
